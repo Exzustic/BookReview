@@ -55,7 +55,12 @@ public class Author {
     this.surname = surname;
   }
 
-  public String toString(){
-    return this.name + " " + this.surname;
+  @Override
+  public String toString() {
+    return "Author{" +
+            "id=" + id +
+            ", name='" + name + '\'' +
+            ", surname='" + surname + '\'' +
+            '}';
   }
 }

@@ -23,5 +23,65 @@ public class Book {
 
   @Column(name = "genre")
   private String genre;
-  
+
+  public Book() {
+  }
+
+  public Book(String title, Author author, String description, String genre) {
+    this.title = title;
+    this.author = author;
+    this.description = description;
+    this.genre = genre;
+  }
+
+  public int getId() {
+    return id;
+  }
+
+  public void setId(int id) {
+    this.id = id;
+  }
+
+  public String getTitle() {
+    return title;
+  }
+
+  public void setTitle(String title) {
+    this.title = title;
+  }
+
+  public Author getAuthor() {
+    return author;
+  }
+
+  public void setAuthor(Author author) {
+    this.author = author;
+  }
+
+  public String getDescription() {
+    return description;
+  }
+
+  public void setDescription(String description) {
+    this.description = description;
+  }
+
+  public String getGenre() {
+    return genre;
+  }
+
+  public void setGenre(String genre) {
+    this.genre = genre;
+  }
+
+  @Override
+  public String toString() {
+    return "Book{" +
+            "id=" + id +
+            ", title='" + title + '\'' +
+            ", author=" + author +
+            ", description='" + description + '\'' +
+            ", genre='" + genre + '\'' +
+            '}';
+  }
 }
